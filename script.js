@@ -20,11 +20,20 @@ BOTON.addEventListener("click", () => {
     }
 });
 
+VALOR.addEventListener("submit", ()=>{
+    if (VALOR.value == null || VALOR.value.length == 0 || VALOR.valueAsNumber == 0) {
+        mostrarError();
+    } else {
+        mostrarResultado();
+    }
+});
+
 function mostrarError() {
     ERROR.style.display = "block";
     setTimeout(() => {
         ERROR.style.display = "none";
     }, 5000);
+    ocultarResultado();
 }
 
 function mostrarResultado() {

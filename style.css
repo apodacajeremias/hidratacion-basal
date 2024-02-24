@@ -99,7 +99,7 @@ button:active {
     width: 100%;
     padding: 16px;
     border: none;
-    background-color: #eee;
+    background-color: transparent;
     display: none;
     color: greenyellow;
     font-weight: bold;
