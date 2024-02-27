@@ -36,6 +36,15 @@ function mostrarError() {
     ocultarResultado();
 }
 
+function mostrarAviso() {
+    ERROR.innerHTML = "Use el menú desplegable para cambiar el valor";
+    ERROR.style.display = "block";
+    setTimeout(() => {
+        ERROR.style.display = "none";
+        ERROR.innerHTML = "Debe completar todos los datos";
+    }, 5000);
+}
+
 function mostrarResultado() {
     let v = VALOR.valueAsNumber;
     if (v <= 30) {
@@ -73,6 +82,7 @@ function mostrarSelect(options) {
         opt.innerHTML = o;
         SELECT.appendChild(opt);
     }
+    mostrarAviso();
     ocultarResultado();
     SELECT.style.display = "block";
 }

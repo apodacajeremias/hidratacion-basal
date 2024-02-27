@@ -53,6 +53,7 @@ input {
     width: 70%;
     padding: 12px 15px;
     border: none;
+    border-radius: 16px;
     background-color: #eee;
 }
 
@@ -98,7 +99,7 @@ button:active {
 #supCorpSelect{
     width: 100%;
     padding: 16px;
-    border: none;
+    border-radius: 16px;
     background-color: transparent;
     display: none;
     color: greenyellow;
